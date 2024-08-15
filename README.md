@@ -4,11 +4,11 @@ This project contains implementations of the FizzBuzz algorithm in Python and Ja
 
 ## Description
 
-The FizzBuzz problem is a classic programming exercise that asks you to print the numbers from 1 to 100, with the following conditions:
-- Print "Fizz" for multiples of 3.
-- Print "Buzz" for multiples of 5.
-- Print "FizzBuzz" for multiples of 15.
-- Print the number itself for all other cases.
+Display numbers between **1** and **N** by following the rules:
+- if number can be divided by 3: display **Fizz** ;
+- if number can be divided by 5: display **Buzz** ;
+- if number can be divided by 3 **AND** 5 : display **FizzBuzz** ;
+- else: display the number.
 
 This project includes solutions for this problem in both Python and JavaScript (Node.js).
 
