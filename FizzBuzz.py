@@ -17,13 +17,10 @@ def FizzBuzz(n):
     """
     if isinstance(n, (int, float)):
         return [fizz_buzz_process(n)]
-    
     elif isinstance(n, list):
         return [fizz_buzz_process(item) for item in n]
-    
     elif isinstance(n, dict):
         return {key: fizz_buzz_process(value) for key, value in n.items()}
-    
     elif isinstance(n, (tuple, set)):
         return type(n)(fizz_buzz_process(item) for item in n)
 
@@ -35,8 +32,8 @@ def main():
     
     try:
         user_input_eval = eval(user_input)
-        result = FizzBuzz(user_input_eval)  # Cette ligne doit être alignée avec `user_input_eval`
-        print("Result:", result)  # Et cette ligne doit aussi être alignée avec `result`
+        result = FizzBuzz(user_input_eval)
+        print("Result:", result)
 
     except (SyntaxError, NameError, TypeError, ValueError) as e:
         print(f"Error: {e}. Please provide a valid number, list, tuple, set, or dictionary.")
